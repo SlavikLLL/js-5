@@ -3,12 +3,12 @@
 let space='';
 let NumberOfFloors= +prompt("Укажите кол-во ярусов");
 if(!isNaN(NumberOfFloors)){
-    for(let i=1;i<=NumberOfFloors;i++){
+    for(let i=0;i<=NumberOfFloors;i++){
         
-        for( let height=i;height<=NumberOfFloors;height++){
+        for( let height=0;height<=NumberOfFloors-1;height++){
             space += ' '; 
         }
-        for( let NumberOfElements=i;NumberOfElements<=2*i-1;NumberOfElements++){
+        for( let NumberOfElements=0;NumberOfElements<=2*i;NumberOfElements++){
             space += '* '; 
         }
         
